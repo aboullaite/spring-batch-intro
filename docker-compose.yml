@@ -1,0 +1,10 @@
+mysql:
+  image: mysql:5.5
+  ports:
+   - "3333:3306"
+  environment:
+    # beware of special characters in password that can be interpreted by shell
+    - MYSQL_ROOT_PASSWORD=root
+    - MYSQL_DATABASE=batch
+    - MYSQL_USER=batch
+    - "MYSQL_PASSWORD=batch"
